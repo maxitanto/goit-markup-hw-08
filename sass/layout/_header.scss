@@ -1,0 +1,87 @@
+.header {
+	border-bottom: 1px solid var(--header-border-color);
+}
+
+.header_wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__nav {
+	@extend %align;
+}
+
+.header__logo {
+	margin-right: 92px;
+}
+
+.header__logo-text {
+	color: var(--text-logo-color);
+}
+
+.nav-list,
+.header-contacts {
+	display: flex;
+
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+}
+
+.nav-list .nav-list__item:not(:last-child),
+.header-contacts .header-contacts__item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.nav-list__link {
+	position: relative;
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: var(--primary-text-color);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}
+
+.nav__link_current {
+	color: var(--accent-color);
+
+	&::after {
+		position: absolute;
+		content: "";
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 4px;
+	
+		background-color: var(--accent-color);
+		border-radius: 2px;
+		}
+}
+
+.header-contacts__link {
+	@extend %align;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: var(--secondary-text-color);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}
+
+.header-contacts__icon {
+	margin-right: 10px;
+	fill: currentColor;
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}

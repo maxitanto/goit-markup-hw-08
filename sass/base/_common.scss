@@ -1,0 +1,38 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+img {
+	display: block;
+}
+
+body {
+	color: var(--primary-text-color);
+	font-family: var(--primary-font-family);
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	background-color: var(--secondary-color);
+}

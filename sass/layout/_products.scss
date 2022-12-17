@@ -1,0 +1,33 @@
+.products {
+	padding-top: 0px;
+}
+
+.product-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.product-list__item {
+	position: relative;
+}
+
+.product__wrapper {
+	position: absolute;
+	bottom: 0;
+
+	width: 100%;
+	height: 70px;
+	padding-top: 27px;
+
+	background-color: rgba(47, 48, 58, 0.8);
+}
+
+.product__name {
+	text-align: center;
+
+	font-weight: 700;
+	@include font(inherit, 1.14);
+	text-transform: uppercase;
+
+	color: var(--secondary-color);
+}

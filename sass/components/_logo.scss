@@ -1,0 +1,6 @@
+.logo {
+	color: var(--accent-color);
+	font-family: var(--secondary-font-family);
+	font-weight: 700;
+	@include font(26px, 1.19);
+}

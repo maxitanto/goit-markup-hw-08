@@ -1,0 +1,33 @@
+.clients-list {
+	@extend %align;
+	justify-content: space-between;
+}
+
+.clients-list__item {
+	width: 170px;
+	height: 92px;
+}
+
+.clients-list__link {
+	@extend %align;
+
+	width: 100%;
+	height: 100%;
+	padding: 16px 32px;
+
+	border: 1px solid var(--primary-icon-color);
+	color: var(--primary-icon-color);
+	outline: none;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+		border-color: var(--accent-color);
+		}
+}
+
+.clients-list__icon {
+	fill: currentColor;
+}
