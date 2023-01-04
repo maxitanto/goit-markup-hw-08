@@ -8,7 +8,7 @@
 	background-image: linear-gradient(to right,
 			var(--bg-gradient-color),
 			var(--bg-gradient-color)),
-	url('/images/hero/hero-mobile.jpg');
+	url('./images/hero/hero-mobile.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -16,7 +16,7 @@
 	@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
-			background-image: url("/images/hero/hero-mobile@2x.jpg");
+			background-image: url("./images/hero/hero-mobile@2x.jpg");
 		}
 
 		@media screen and (max-width: 767px) {
