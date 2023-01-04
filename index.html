@@ -118,12 +118,12 @@
     </header>
 
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button class="btn hero__btn" type="button" data-modal-open>Замовити послугу</button>
-      </section> -->
+      </section>
 
-      <!-- <section class="feature section">
+      <section class="feature section">
         <div class="container">
           <h2 class="visually-hidden">Особливості</h2>
           <ul class="list feature-list">
@@ -173,9 +173,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="products section">
+      <section class="products section">
         <div class="container">
           <h2 class="section_title">Чим ми займаємося</h2>
           <ul class="product-list list">
@@ -214,14 +214,27 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="team section">
+      <section class="team section">
         <div class="container">
           <h2 class="section_title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img src="./images/igor.jpg" alt="Співробітник, чоловік" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="/images/team/igor-mobile.webp 1x, /images/team/igor-mobile@2x.webp 2x"
+                  sizes="100vw"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/images/team/igor-mobile.jpg 1x, /images/team/igor-mobile@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  sizes="100vw"
+                />
+                <img src="/images/team/igor-mobile.jpg" alt="Співробітник, чоловік" />
+              </picture>
               <div class="team-description">
                 <h3 class="team__employee-name">Ігор Дем'яненко</h3>
                 <p class="team__employee-profession" lang="en">Product Designer</p>
@@ -255,7 +268,18 @@
             </li>
 
             <li class="team-list__item">
-              <img src="./images/olga.jpg" alt="Співробітник, жінка" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="/images/team/olga-mobile.webp 1x, /images/team/olga-mobile@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/images/team/olga-mobile.jpg x1, /images/team/olga-mobile@2x.jpg x2"
+                  media="(max-width: 767px)"
+                />
+                <img src="/images/team/olga-mobile.jpg" alt="Співробітник, жінка" />
+              </picture>
               <div class="team-description">
                 <h3 class="team__employee-name">Ольга Рєпіна</h3>
                 <p class="team__employee-profession" lang="en">Frontend Developer</p>
@@ -289,12 +313,21 @@
             </li>
 
             <li class="team-list__item">
-              <img
-                src="./images/nikolay.jpg"
-                alt="Співробітник, чоловік"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    /images/team/nikolay-mobile.webp    1x,
+                    /images/team/nikolay-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="/images/team/nikolay-mobile.jpg 1x, /images/team/nikolay-mobile@2x.jpg 2x"
+                  media="(max-widtt: 767px)"
+                />
+                <img src="/images/team/nikolay-mobile.jpg" alt="Співробітник, чоловік" />
+              </picture>
               <div class="team-description">
                 <h3 class="team__employee-name">Микола Тарасов</h3>
                 <p class="team__employee-profession" lang="en">Marketing</p>
@@ -328,12 +361,21 @@
             </li>
 
             <li class="team-list__item">
-              <img
-                src="./images/michael.jpg"
-                alt="Співробітник, чоловік"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    /images/team/michael-mobile.webp    1x,
+                    /images/team/michael-mobile@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  src="/images/team/michael-mobile.jpg 1x, /images/team/michael-mobile@2x.jpg 2x"
+                  media="(max-width:767px)"
+                />
+                <img src="/images/team/michael-mobile.jpg" alt="Співробітник, чоловік" />
+              </picture>
               <div class="team-description">
                 <h3 class="team__employee-name">Михайло Єрмаков</h3>
                 <p class="team__employee-profession" lang="en">UI Designer</p>
@@ -367,9 +409,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="section_title">Постійні клієнти</h2>
           <ul class="clients-list list">
@@ -417,10 +459,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__contacts-wrapper">
@@ -502,7 +544,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">

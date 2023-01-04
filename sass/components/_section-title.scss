@@ -1,7 +1,8 @@
 .section_title {
-	margin-bottom: 50px;
 	text-align: center;
-		
-	font-weight: 700;
-	@include font(36px, 1.17);
-}
+	
+		@media screen and (max-width: 767px) {
+			margin-bottom: 30px;
+			@include font(28px, 1.18);
+		}	
+	}
