@@ -116,13 +116,14 @@ body {
 
 .portfolio__filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
   margin-left: -8px;
+  margin-bottom: 25px;
 }
 
 .filter__item {
   margin-left: 8px;
+  margin-bottom: 15px;
 }
 
 .filter__btn {
@@ -422,6 +423,7 @@ body {
   pointer-events: none;
 }
 .mobile-menu.is-open {
+  z-index: 999;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -709,16 +711,11 @@ body {
 }
 
 .portfolio__works {
-  display: flex;
-  flex-wrap: wrap;
   margin-top: -30px;
-  margin-left: -30px;
 }
 
 .works-list__item {
   margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc(33.3333333333% - 30px);
 }
 
 .works-list__link {
@@ -754,7 +751,6 @@ body {
   color: var(--secondary-text-color);
 }
 
-/* ==========START OVERLAY========== */
 .works-list__overlay {
   position: absolute;
   top: 0;
@@ -776,7 +772,6 @@ body {
   transform: translateY(0);
 }
 
-/* ==========END OVERLAY========== */
 .footer {
   padding: 60px 0;
   background-color: var(--footer-hero-bcg-color);

@@ -50,6 +50,7 @@
 	pointer-events: none;
 
 		&.is-open {
+			z-index: 999;
 			opacity: 1;
 			visibility: visible;
 			pointer-events: auto;
