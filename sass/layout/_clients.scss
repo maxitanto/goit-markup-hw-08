@@ -1,16 +1,20 @@
 .clients-list {
-	@extend %align;
-	justify-content: space-between;
+	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: -30px;
 }
 
 .clients-list__item {
 	width: 210px;
 	height: 92px;
 
-	&:not(:nth-last-child(-n+2)) {
-		margin-bottom: 30px;
-	}
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 30px;
 }
 
 .clients-list__link {

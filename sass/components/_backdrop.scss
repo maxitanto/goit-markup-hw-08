@@ -26,9 +26,17 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 
-	width: 528px;
+	width: 100%;
 	height: 580px;
 	padding: 40px;
+
+	@media screen and (min-width: 480px) {
+	width: 450px;
+	height: 608px;
+	}
+
+	// width: 528px;
+
 
 	background-color: var(--secondary-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -187,15 +195,18 @@
 }
 
 .checkbox__label {
-	line-height: 1.71;
-	letter-spacing: 0.03em;
+	@include font(12px, 1.17);
 	color: var(--secondary-text-color);
+
+	// line-height: 1.71;
 }
 
 .checkbox__link {
-	line-height: 1.71;
+	@include font(12px, 1.17);
 	color: var(--accent-color);
 	text-decoration: underline;
+
+	// line-height: 1.71;
 }
 
 .modal-form___btn {
