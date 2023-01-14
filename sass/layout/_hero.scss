@@ -5,9 +5,14 @@
 
 	text-align: center;
 
+	@media screen and (max-width: 1199px) {
+		height: 400px;
+		padding: 118px 0;
+	}
+
 	background-image: linear-gradient(to right,
-			var(--bg-gradient-color),
-			var(--bg-gradient-color)),
+		var(--bg-gradient-color),
+		var(--bg-gradient-color)),
 	url(../images/hero/hero-mobile.jpg);
 	background-position: center;
 	background-size: cover;
@@ -16,19 +21,59 @@
 	@media (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
-			background-image: url(../images/hero/hero-mobile@2x.jpg);
-		}
+			background-image: linear-gradient(to right,
+					var(--bg-gradient-color),
+					var(--bg-gradient-color)),
+			url(../images/hero/hero-mobile@2x.jpg);
+	}
 
-		@media screen and (max-width: 767px) {
-			height: 400px;
-			padding: 118px 0;
-		}
+	@media screen and (min-width: 768px) {
+		background-image: linear-gradient(to right,
+			var(--bg-gradient-color),
+			var(--bg-gradient-color)),
+		url(../images/hero/hero-tablet.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+			
+		@media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+				background-image: linear-gradient(to right,
+						var(--bg-gradient-color),
+						var(--bg-gradient-color)),
+				url(../images/hero/hero-tablet@2x.jpg);
+			}
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: 1600px;
+		height: 600px;
+
+		background-image: linear-gradient(to right,
+			var(--bg-gradient-color),
+			var(--bg-gradient-color)),
+		url(../images/hero/hero-desktop.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+		@media (min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+				background-image: linear-gradient(to right,
+					var(--bg-gradient-color),
+					var(--bg-gradient-color)),
+				url(../images/hero/hero-desktop@2x.jpg);
+			}
+	}
 }
 
 .hero__title {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
+	@include font(26px, 1.62);
 	
 	font-weight: 900;
 	letter-spacing: 0.06em;
@@ -36,7 +81,9 @@
 	color: var(--secondary-color);
 	text-transform: uppercase;
 
-		@media screen and (max-width: 767px) {
+
+
+		@media screen and (max-width: 1199px) {
 			max-width: 360px;
 		}
 } 

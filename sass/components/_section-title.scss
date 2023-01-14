@@ -1,7 +1,7 @@
 .section_title {
 	text-align: center;
 	
-		@media screen and (max-width: 767px) {
+		@media screen and (max-width: 1199px) {
 			margin-bottom: 30px;
 			@include font(28px, 1.18);
 		}	

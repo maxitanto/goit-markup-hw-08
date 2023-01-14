@@ -8,6 +8,13 @@
 	text-align: center;
 }
 
+.footer__tablet-wrapper {
+	@media screen and (min-width: 767px) and (max-width: 1199px) {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
 .footer__logo-text,
 .footer-social__title,
 .footer-form__label {
@@ -46,6 +53,10 @@
 
 .footer-social__wrapper {
 	margin-top: 60px;
+
+	@media screen and (min-width: 768px) {
+		margin-top: 0px;
+	}
 }
 
 .footer-social__title,
@@ -89,6 +100,10 @@
 			outline: none;
 			border-color: var(--accent-color);
 		}
+	
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		width: 450px;
+	}
 }
 
 .footer-form__btn {

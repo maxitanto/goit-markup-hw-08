@@ -2,5 +2,9 @@
 	color: var(--accent-color);
 	font-family: var(--secondary-font-family);
 	font-weight: 700;
-	@include font(26px, 1.19);
+	@include font(24px, 1.17);
+
+	@media screen and (min-width: 1200px) {
+		@include font(26px, 1.19);
+	}
 }
