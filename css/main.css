@@ -117,17 +117,38 @@ body {
 .portfolio__filter {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -8px;
-  margin-bottom: 25px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__filter {
+    margin-left: -8px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__filter {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__filter {
+    margin-bottom: 30px;
+  }
 }
 
-.filter__item {
-  margin-left: 8px;
-  margin-bottom: 15px;
+@media screen and (max-width: 767px) {
+  .filter__item {
+    margin-left: 8px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .filter__item:not(:first-child) {
+    margin-left: 8px;
+  }
 }
 
 .filter__btn {
-  padding: 6px 22px;
+  padding: 6px 26px;
   font-weight: 500;
   line-height: 1.63;
   letter-spacing: inherit;
@@ -244,7 +265,7 @@ body {
   margin-bottom: 12px;
   text-align: center;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
 }
 
 .modal-form__field {
@@ -584,7 +605,7 @@ body {
 
 .header-contacts {
   font-size: 12px;
-  line-height: 1.14;
+  line-height: 1.17;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -904,19 +925,47 @@ body {
 }
 
 .portfolio__works {
-  margin-top: -30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .portfolio__works {
+    margin-bottom: -30px;
+    margin-left: -30px;
+  }
 }
 
-.works-list__item {
-  margin-top: 30px;
+@media screen and (max-width: 767px) {
+  .works-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .works-list__item {
+    margin-bottom: 30px;
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .works-list__item {
+    display: flex;
+    flex-basis: calc(50% - 30px);
+  }
 }
 
 .works-list__link {
+  display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .works-list__link:hover, .works-list__link:focus {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) {
+  .works-list__link {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .works-list__thumb {
@@ -925,6 +974,7 @@ body {
 }
 
 .works-list__content {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid var(--works-card-set-border);
   border-top: none;
