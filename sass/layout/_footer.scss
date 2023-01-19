@@ -116,11 +116,11 @@
 	
 	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	
-		&:focus,
-		&:hover {
-			outline: none;
-			border-color: var(--accent-color);
-		}
+	&:focus,
+	&:hover {
+		outline: none;
+		border-color: var(--accent-color);
+	}
 	
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		width: 450px;

@@ -96,7 +96,7 @@ body {
     margin-right: auto;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
   }
@@ -132,6 +132,11 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__filter {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__filter {
+    margin-bottom: 50px;
   }
 }
 
@@ -236,10 +241,16 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
     height: 608px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 580px;
   }
 }
 
@@ -586,15 +597,22 @@ body {
     letter-spacing: 0.02em;
   }
 }
+
 .nav-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .header-contacts__item:not(:last-child) {
     margin-right: 50px;
   }
 }
+
 .nav-list__link {
   position: relative;
   display: block;
@@ -634,11 +652,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .header-contacts__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
 .header-contacts__link {
   color: var(--secondary-text-color);
 }
@@ -674,11 +687,15 @@ body {
     width: 16px;
     height: 12px;
   }
+}
+
+@media screen and (min-width: 1200px) {
   .contact__icon-mobile {
     width: 10px;
     height: 16px;
   }
 }
+
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -1026,6 +1043,11 @@ body {
     flex-basis: calc(50% - 30px);
   }
 }
+@media screen and (min-width: 1200px) {
+  .works-list__item {
+    flex-basis: calc(33.3333333333% - 30px);
+  }
+}
 
 .works-list__link {
   display: block;
@@ -1035,7 +1057,7 @@ body {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .works-list__link {
     display: flex;
     flex-direction: column;

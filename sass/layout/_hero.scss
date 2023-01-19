@@ -23,8 +23,8 @@
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
 			background-image: linear-gradient(to right,
-					var(--bg-gradient-color),
-					var(--bg-gradient-color)),
+				var(--bg-gradient-color),
+				var(--bg-gradient-color)),
 			url(../images/hero/hero-mobile@2x.jpg);
 	}
 
