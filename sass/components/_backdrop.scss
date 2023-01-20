@@ -132,9 +132,12 @@
 
 .modal-form___comments-area {
 	width: 100%;
-	height: 120px;
 	resize: none;
 	padding: 12px 16px;
+
+	@media screen and (min-width: 480px) {
+		height: 120px;
+	}
 
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;

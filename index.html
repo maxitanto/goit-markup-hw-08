@@ -337,7 +337,7 @@
                   type="image/webp"
                 />
                 <source
-                  srcset="./images/team/olga-mobile.jpg x1, ./images/team/olga-mobile@2x.jpg x2"
+                  srcset="./images/team/olga-mobile.jpg 1x, ./images/team/olga-mobile@2x.jpg 2x"
                   media="(max-width: 767px)"
                 />
                 <img src="./images/team/olga-mobile.jpg" alt="Співробітник, жінка" />
@@ -500,7 +500,10 @@
                   type="image/webp"
                 />
                 <source
-                  src="./images/team/michael-mobile.jpg 1x, ./images/team/michael-mobile@2x.jpg 2x"
+                  srcset="
+                    ./images/team/michael-mobile.jpg    1x,
+                    ./images/team/michael-mobile@2x.jpg 2x
+                  "
                   media="(max-width:767px)"
                 />
                 <img src="./images/team/michael-mobile.jpg" alt="Співробітник, чоловік" />
@@ -733,8 +736,10 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
               <span class="checkbox__icon"> </span>
-              <span class="checkbox__label">Погоджуюся з розсилкою та приймаю</span>&nbsp;
-              <a class="checkbox__link link" href="">Умови договору</a>
+              <span class="checkbox__label"
+                >Погоджуюся з розсилкою та приймаю
+                <a class="checkbox__link link" href="">Умови договору</a>
+              </span>
             </label>
           </div>
           <button class="modal-form___btn btn" type="submit">Відправити</button>

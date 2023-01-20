@@ -25,10 +25,16 @@
 	line-height: 0;
 		
 	background-color: transparent;
+
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	&:hover,
+	&:focus {
+		fill: var(--accent-color);
+	}
 }
 		
 .mobile-menu {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 		
@@ -74,7 +80,9 @@
 		
 .mobile-menu-btn-close__icon {
 	fill: var(--primary-text-color);
-		
+	
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	
 	&:hover,
 	&:focus {
 		fill: var(--accent-color);
@@ -82,13 +90,21 @@
 }
 		
 .mobile-menu__nav {
-	margin-bottom: 302px;
+	margin-bottom: 100px;
+
+	@media screen and (min-width: 480px) {
+		margin-bottom: 302px;
+	}
 }
 		
 .mobile-menu-navigation {
 	font-weight: 500;
-	@include font(40px, 1.18);
 	letter-spacing: 0.02em;
+	@include font(28px, 1.18);
+
+	@media screen and (min-width: 480px) {
+		@include font(40px, 1.18);
+	}
 }
 		
 .mobile-menu-navigation__item:not(:last-child),
@@ -104,7 +120,7 @@
 		color: var(--accent-color);
 	}
 }
-		
+
 .mobile-menu-navigation__link_current {
 	color: var(--accent-color);
 }
@@ -115,9 +131,13 @@
 		
 .mobile-menu__tel {
 	font-weight: 500;
-	@include font(34px, 1.18);
 	letter-spacing: 0.02em;
 	color: var(--accent-color);
+	@include font(28px, 1.18);
+
+	@media screen and (min-width: 480px) {
+		@include font(34px, 1.18);
+	}
 }
 		
 .mobile-menu__mail {
